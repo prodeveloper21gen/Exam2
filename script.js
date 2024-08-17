@@ -176,9 +176,22 @@ function getData(data) {
 
         checkbox.type = 'checkbox';
         checkbox.checked = element.status;
+
+        if (element.status) {
+            Name.classList.add('strikethrough');
+        } else {
+            Name.classList.remove('strikethrough');
+        }
+
         checkbox.onchange = () => {
             element.status = checkbox.checked;
             EditedTask(element.id, element);
+
+            if (element.status) {
+                Name.classList.add('strikethrough');
+            } else {
+                Name.classList.remove('strikethrough');
+            }
         };
 
         card.classList.add('card');
