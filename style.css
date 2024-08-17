@@ -117,3 +117,6 @@ dialog button{
   width: 100%;
   height: 40px;
 }
+.strikethrough {
+  text-decoration: line-through;
+}
