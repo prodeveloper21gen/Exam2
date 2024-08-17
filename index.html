@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Employees Todo</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>Employees</h1>
+        <button class="btnAdd">+ ADD NEW</button>
+    </div>
+    <input type="search" class="searchInp" placeholder="🔍 Search by name">
+
+    <select id="statusFilter">
+        <option value="all">All</option>
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+    </select>
+
+    <select id="positionFilter">
+        <option value="all">All Positions</option>
+        <option value="position1">Position 1</option>
+        <option value="position2">Position 2</option>
+    </select>
+
+    <div class="box"></div>
+
+    <dialog class="addModal">
+        <form class="addForm">
+            <input type="text" class="addName" name="addName" placeholder="Add Name" required>
+            <input type="number" class="addPhone" name="addPhone" placeholder="📞 Add Phone" required>
+            <input type="text" class="addImg" name="addImg" placeholder="🌆 Add URL of IMG" required>
+            <button type="submit" class="btnSave">SAVE</button>
+            <button type="button" class="btnClose">CLOSE</button>
+        </form>
+    </dialog>
+
+    <dialog class="editModal">
+        <form class="editForm">
+            <input type="text" class="editName" name="editName" placeholder="edit Name" required>
+            <input type="number" class="editPhone" name="editPhone" placeholder="📞 edit Phone" required>
+            <input type="text" class="editImg" name="editImg" placeholder="🌆 edit URL of IMG" required>
+            <button type="submit" class="btnSaveEdit">SAVE</button>
+            <button type="button" class="btnCloseEdit">CLOSE</button>
+        </form>
+    </dialog>
+
+    <dialog class="infoModal">
+        <h1 class="infoTitle"></h1>
+        <img src="" alt="Avatar" class="infoImg">
+        <p class="infoPhone"></p>
+        <button class="btnCloseInfo">CLOSE</button>
+    </dialog>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body{
+  background-color: rgb(240, 240, 240);
+  font-family: sans-serif;
+}
+.box {
+  padding: 20px;
+  gap: 20px;
+  margin: 10px auto;
+  width: 97%;
+  height: 460px;
+  background-color: rgba(156, 209, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.card .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card .buttons button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.card .buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card input[type="checkbox"] {
+  margin-left: 10px;
+  align-self: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.searchInp{
+  font-size: 20px;
+  width: 250px;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+.btnAdd{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(0, 67, 129);
+  color: white;
+}
+select{
+  margin: 0px 5px;
+  font-size: 20px;
+  width: 170px;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+dialog{
+  width: 30%;
+  height: 330px;
+}
+dialog input{
+  margin: 10px 0px;
+  width: 100%;
+  height: 40px;
+}
+dialog button{
+  margin: 10px 0px;
+  width: 100%;
+  height: 40px;
+}
